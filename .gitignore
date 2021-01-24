@@ -1,0 +1,9 @@
+/AdminCRM.Data/bin
+/.vs
+/AdminCRM.Model/bin
+/AdminCRM.Model/obj
+/AdminCRM.Data/obj
+/AdminCRM.Service/obj
+/AdminCRM.Service/bin
+/AdminCRM.WEB/bin
+/AdminCRM.WEB/obj
