@@ -56,6 +56,13 @@
                                     <label for="WelcomeText">Welcome Text</label>
                                     @Html.TextBoxFor(m => m.WelcomeText, new { @class = "form-control", @placeholder = "Welcome text", @maxLength = "20" })
                                 </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Copyright Text</label>
+                                    @Html.TextBoxFor(m => m.CopyrightText, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Copyright Text", @maxLength = "150", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter copyright text!
+                                    </div>
+                                </div>
                             </div>
                             <button class="btn btn-primary" type="submit">Update Data</button>
 

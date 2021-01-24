@@ -92,6 +92,8 @@
     <Compile Include="Services\CompanyServices\CompanyService.cs" />
     <Compile Include="Services\Feature\FeatureSingleService.cs" />
     <Compile Include="Services\Feature\FeatureMainService.cs" />
+    <Compile Include="Services\Team\TeamMemberService.cs" />
+    <Compile Include="Services\Team\TeamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AdminCRM.Data\AdminCRM.Data.csproj">

@@ -1,0 +1,104 @@
+﻿@model AdminCRM.Model.Models.Sections.TeamMember
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-title-box">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="page-title mb-1">Team Member</h4>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index")">Team Member</a></li>
+                    <li class="breadcrumb-item active">Update Team Member</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="float-right ml-2">
+                            <a class="btn btn-sm btn-warning btn-flat margin" href="@Url.Action("Index")">Back to List</a>
+                        </div>
+                        <h4 class="header-title">Team Member update Form</h4>
+                        <p class="card-title-desc"></p>
+                        @using (Html.BeginForm("Edit", "TeamMember", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.Id)
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCustom03">Name</label>
+                                    @Html.TextBoxFor(m => m.Name, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter name", @maxLength = "50", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a name!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Main Title</label>
+                                    @Html.TextBoxFor(m => m.Designation, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter designation", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a main designation!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Facebook</label>
+                                    @Html.TextBoxFor(m => m.Facebook, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Facebook profile link", @maxLength = "150" })
+                                    <div class="invalid-feedback">
+                                        Maximum 150 character allowed!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Twitter</label>
+                                    @Html.TextBoxFor(m => m.Twitter, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Twitter profile link", @maxLength = "150" })
+                                    <div class="invalid-feedback">
+                                        Maximum 150 character allowed!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Tumblr</label>
+                                    @Html.TextBoxFor(m => m.Tumblr, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Tumblr profile link", @maxLength = "150" })
+                                    <div class="invalid-feedback">
+                                        Maximum 150 character allowed!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Vimeo</label>
+                                    @Html.TextBoxFor(m => m.Vimeo, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Vimeo profile link", @maxLength = "150" })
+                                    <div class="invalid-feedback">
+                                        Maximum 150 character allowed!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Description</label>
+                                    @Html.TextAreaFor(m => m.Description, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Description", @maxLength = "150", @required = "required", @rows = "5" })
+                                    <div class="invalid-feedback">
+                                        Please enter description!
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Update Data</button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div> <!-- container-fluid -->
+</div>

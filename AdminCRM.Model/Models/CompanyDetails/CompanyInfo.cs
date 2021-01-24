@@ -16,6 +16,8 @@ namespace AdminCRM.Model.Models.CompanyDetails
         public string Email { get; set; }
         [StringLength(150, ErrorMessage = "Maximum 150 character allowed.")]
         public string WelcomeText { get; set; }
+        [StringLength(150, ErrorMessage = "Maximum 150 character allowed.")]
+        public string CopyrightText { get; set; }
         [StringLength(250, ErrorMessage = "Maximum 250 character allowed.")]
         public string CompanyLogoPath { get; set; }
     }

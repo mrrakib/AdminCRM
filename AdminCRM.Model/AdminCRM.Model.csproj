@@ -86,9 +86,11 @@
     <Compile Include="Models\CompanyDetails\CompanySocialProfile.cs" />
     <Compile Include="Models\Sections\AboutSection.cs" />
     <Compile Include="Models\Sections\ExperienceSection.cs" />
+    <Compile Include="Models\Sections\TeamMember.cs" />
     <Compile Include="Models\Sections\FeatureSingle.cs" />
     <Compile Include="Models\Sections\FeatureMain.cs" />
     <Compile Include="Models\Sections\ServiceSingle.cs" />
+    <Compile Include="Models\Sections\Team.cs" />
     <Compile Include="Models\Sections\WorkProcessSection.cs" />
     <Compile Include="Models\Sections\OurServiceMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -175,6 +175,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\TeamMemberController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\SingleFeatureController.cs" />
     <Compile Include="Controllers\MainFeatureController.cs" />
     <Compile Include="Controllers\MainServiceController.cs" />
@@ -12662,6 +12664,12 @@
     <Content Include="Views\SingleFeature\Create.cshtml" />
     <Content Include="Views\SingleFeature\Edit.cshtml" />
     <Content Include="Views\SingleFeature\Index.cshtml" />
+    <Content Include="Views\Team\Create.cshtml" />
+    <Content Include="Views\Team\Edit.cshtml" />
+    <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\TeamMember\Create.cshtml" />
+    <Content Include="Views\TeamMember\Edit.cshtml" />
+    <Content Include="Views\TeamMember\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
