@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard | XMAX - Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="XMAX admin dashboard" name="description" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/Content/assets/images/favicon.ico">
+    @Styles.Render("~/Content/adminCss")
+    @Styles.Render("~/Content/dataTableCss")
+
+</head>
+
+<body data-topbar="colored">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @Html.Partial("_topBar")
+
+        <!-- ========== Left Sidebar Start ========== -->
+        @Html.Partial("_sideBar")
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                @RenderBody()
+            </div>
+            <!-- End Page-content -->
+
+
+            @Html.Partial("_footer")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    @Scripts.Render("~/bundles/adminjs")
+    <script src="https://unicons.iconscout.com/release/v2.0.1/script/monochrome/bundle.js"></script>
+    @Scripts.Render("~/bundles/adminjs2")
+    @Scripts.Render("~/bundles/dataTablejs")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

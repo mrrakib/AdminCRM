@@ -1,0 +1,72 @@
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.dll.config
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.pdb
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\BeginCollectionItem.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Newtonsoft.Json.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Owin.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\PagedList.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Data.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Model.dll
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Data.pdb
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Model.pdb
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.SqlServer.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\Newtonsoft.Json.xml
+D:\APIPractice\RapidSale\RapidSale.Service\bin\Debug\PagedList.xml
+D:\APIPractice\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.csprojResolveAssemblyReference.cache
+D:\APIPractice\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.dll
+D:\APIPractice\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.pdb
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.dll.config
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Service.pdb
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\BeginCollectionItem.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.SqlServer.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Newtonsoft.Json.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Owin.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\PagedList.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Data.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Model.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Data.pdb
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Data.dll.config
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Model.pdb
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\RapidSale.Model.dll.config
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\EntityFramework.SqlServer.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\Newtonsoft.Json.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\bin\Debug\PagedList.xml
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.csprojAssemblyReference.cache
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.csproj.CoreCompileInputs.cache
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.csproj.CopyComplete
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.dll
+H:\Pharmacy Management\Rapid Pharma\rapidpharma\RapidSale\RapidSale.Service\obj\Debug\RapidSale.Service.pdb

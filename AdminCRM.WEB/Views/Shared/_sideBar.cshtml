@@ -1,0 +1,66 @@
+﻿<div class="vertical-menu">
+
+    <div data-simplebar class="h-100">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title">Menu</li>
+
+                <li>
+                    <a href="@Url.Action("Index","Dashboard")" class="waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="uim uim-airplay"></i></div>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="uim uim-key-skeleton-alt"></i></div>
+                        <span>Settings</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("Index", "User")">User</a></li>
+                        <li><a href="@Url.Action("Index", "Company")">Company Basic Info</a></li>
+                        <li><a href="@Url.Action("Index", "CompanySocialProfile")">Company Social Profile</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="uim uim-circle-layer"></i></div>
+                        <span>About Section</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("Index", "About")">About Us</a></li>
+                        <li><a href="@Url.Action("Index", "Experience")">Our Experience</a></li>
+                        <li><a href="@Url.Action("Index", "WorkProcess")">Work Process</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="uim uim-circle-layer"></i></div>
+                        <span>Service Section</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("Index", "MainService")">Main Service</a></li>
+                        <li><a href="@Url.Action("Index", "SingleService")">Single Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="uim uim-circle-layer"></i></div>
+                        <span>Feature Section</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="@Url.Action("Index", "MainFeature")">Main Feature</a></li>
+                        <li><a href="@Url.Action("Index", "SingleFeature")">Single Feature</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>

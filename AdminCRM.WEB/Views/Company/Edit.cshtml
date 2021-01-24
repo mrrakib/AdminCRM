@@ -1,0 +1,70 @@
+﻿@model AdminCRM.Model.Models.CompanyDetails.Company
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-title-box">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="page-title mb-1">Company</h4>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index")">Company</a></li>
+                    <li class="breadcrumb-item active">Update Company</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="float-right ml-2">
+                            <a class="btn btn-sm btn-warning btn-flat margin" href="@Url.Action("Index")">Back to List</a>
+                        </div>
+                        <h4 class="header-title">Company update Form</h4>
+                        <p class="card-title-desc"></p>
+                        @using (Html.BeginForm("Edit", "Company", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.Id)
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Phone No</label>
+                                    @Html.TextBoxFor(m => m.PhoneNo, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Phone number", @maxLength = "150", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a phone number!
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCustom03">Email</label>
+                                    @Html.TextBoxFor(m => m.Email, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Email address", @maxLength = "150", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a email address!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="WelcomeText">Welcome Text</label>
+                                    @Html.TextBoxFor(m => m.WelcomeText, new { @class = "form-control", @placeholder = "Welcome text", @maxLength = "20" })
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Update Data</button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div> <!-- container-fluid -->
+</div>

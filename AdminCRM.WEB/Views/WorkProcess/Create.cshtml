@@ -1,0 +1,132 @@
+﻿@model AdminCRM.Model.Models.Sections.WorkProcessSection
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-title-box">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="page-title mb-1">Work Process Section</h4>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index")">Work Process Section</a></li>
+                    <li class="breadcrumb-item active">Add Work Process Section</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="float-right ml-2">
+                            <a class="btn btn-sm btn-warning btn-flat margin" href="@Url.Action("Index")">Back to List</a>
+                        </div>
+                        <h4 class="header-title">Work Process Section Entry Form</h4>
+                        <p class="card-title-desc"></p>
+                        @using (Html.BeginForm("Create", "WorkProcess", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Top title</label>
+                                    @Html.TextBoxFor(m => m.TopTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter top title", @maxLength = "50", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCustom03">Main Title</label>
+                                    @Html.TextBoxFor(m => m.MainTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter main title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a main title!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">First Process title</label>
+                                    @Html.TextBoxFor(m => m.ProcessOneTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter process title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">First Process Icon</label>
+                                    @Html.TextBoxFor(m => m.ProcessOneIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: calendar", @maxLength = "20", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon name!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">First Process Description</label>
+                                    @Html.TextAreaFor(m => m.ProcessOneDesc, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter description", @maxLength = "250", @required = "required", @rows = "5" })
+                                    <div class="invalid-feedback">
+                                        Please enter a description!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Second Process title</label>
+                                    @Html.TextBoxFor(m => m.ProcessTwoTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter process title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Second Process Icon</label>
+                                    @Html.TextBoxFor(m => m.ProcessTwoIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: envelop", @maxLength = "20", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon name!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Second Process Description</label>
+                                    @Html.TextAreaFor(m => m.ProcessTwoDesc, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter description", @maxLength = "250", @required = "required", @rows = "5" })
+                                    <div class="invalid-feedback">
+                                        Please enter a description!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Third Process title</label>
+                                    @Html.TextBoxFor(m => m.ProcessThreeTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter process title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Third Process Icon</label>
+                                    @Html.TextBoxFor(m => m.ProcessThreeIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: slightly-smile", @maxLength = "20", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon name!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Third Process Description</label>
+                                    @Html.TextAreaFor(m => m.ProcessThreeDesc, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter description", @maxLength = "250", @required = "required", @rows = "5" })
+                                    <div class="invalid-feedback">
+                                        Please enter a description!
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Save Data</button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div> <!-- container-fluid -->
+</div>

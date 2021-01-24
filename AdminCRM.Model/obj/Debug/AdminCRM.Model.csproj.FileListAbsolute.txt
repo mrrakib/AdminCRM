@@ -1,0 +1,95 @@
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll.config
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\AdminCRM.Model.pdb
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\BeginCollectionItem.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\EntityFramework.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Newtonsoft.Json.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Owin.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\PagedList.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\EntityFramework.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\Newtonsoft.Json.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\bin\Debug\PagedList.xml
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\obj\Debug\AdminCRM.Model.csprojAssemblyReference.cache
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\obj\Debug\AdminCRM.Model.csproj.CoreCompileInputs.cache
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\obj\Debug\AdminCRM.Model.csproj.CopyComplete
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\obj\Debug\AdminCRM.Model.dll
+H:\FIverr\Philip\RapidSale\AdminCRM.Model\obj\Debug\AdminCRM.Model.pdb
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll.config
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.pdb
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\BeginCollectionItem.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Newtonsoft.Json.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Owin.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\PagedList.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\Newtonsoft.Json.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\bin\Debug\PagedList.xml
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.csproj.CoreCompileInputs.cache
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.csproj.CopyComplete
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.dll
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.pdb
+H:\FIverr\Philip\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.csprojAssemblyReference.cache
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll.config
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\AdminCRM.Model.pdb
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\BeginCollectionItem.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Newtonsoft.Json.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Owin.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\PagedList.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\Newtonsoft.Json.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\bin\Debug\PagedList.xml
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.csprojAssemblyReference.cache
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.csproj.CopyComplete
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.dll
+F:\Biplob Projects\Admin CRM\AdminCRM\AdminCRM.Model\obj\Debug\AdminCRM.Model.pdb
