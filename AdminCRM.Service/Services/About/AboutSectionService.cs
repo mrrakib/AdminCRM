@@ -22,6 +22,7 @@ namespace AdminCRM.Service.Services.About
         bool SaveAboutSection();
 
         bool DeleteAboutSection(int Id);
+        AboutSection GetTopOneAboutUs();
     }
     public class AboutSectionService : IAboutSectionService
     {
@@ -49,6 +50,10 @@ namespace AdminCRM.Service.Services.About
         public List<AboutSection> GetAllAbouts()
         {
             return _aboutSectionRepository.GetAll().ToList();
+        }
+        public AboutSection GetTopOneAboutUs()
+        {
+            return _aboutSectionRepository.GetAll().FirstOrDefault();
         }
 
         public AboutSection GetAboutDetails(int Id)
