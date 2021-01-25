@@ -14,6 +14,9 @@ namespace AdminCRM.Data
 {
     public class AdminContext : IdentityDbContext<ApplicationUser>
     {
+        /// <summary>
+        ///Test commit
+        /// </summary>
         public AdminContext() : base("Admin_Context")
         {
 
