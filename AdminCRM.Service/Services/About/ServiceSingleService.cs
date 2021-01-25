@@ -22,6 +22,7 @@ namespace AdminCRM.Service.Services.About
         bool Update(ServiceSingle model);
         bool Save();
         bool Delete(int Id);
+        ServiceSingle GetTopOne();
     }
     public class ServiceSingleService : IServiceSingleService
     {
@@ -49,6 +50,10 @@ namespace AdminCRM.Service.Services.About
         public List<ServiceSingle> GetAll()
         {
             return _serviceSingleRepository.GetAll().ToList();
+        }
+        public ServiceSingle GetTopOne()
+        {
+            return _serviceSingleRepository.GetAll().FirstOrDefault();
         }
 
         public ServiceSingle GetDetails(int Id)

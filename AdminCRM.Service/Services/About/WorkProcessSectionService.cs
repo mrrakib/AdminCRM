@@ -21,6 +21,7 @@ namespace AdminCRM.Service.Services.About
         bool Update(WorkProcessSection model);
         bool Save();
         bool Delete(int Id);
+        WorkProcessSection GetTopOne();
     }
     public class WorkProcessSectionService : IWorkProcessSectionService
     {
@@ -48,6 +49,10 @@ namespace AdminCRM.Service.Services.About
         public List<WorkProcessSection> GetAll()
         {
             return _workProcessSectionRepository.GetAll().ToList();
+        }
+        public WorkProcessSection GetTopOne()
+        {
+            return _workProcessSectionRepository.GetAll().FirstOrDefault();
         }
 
         public WorkProcessSection GetDetails(int Id)

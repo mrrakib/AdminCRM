@@ -20,7 +20,7 @@ namespace AdminCRM.Service.Services.About
         bool AddExperienceSection(ExperienceSection model);
         bool UpdateExperienceSection(ExperienceSection model);
         bool SaveExperienceSection();
-
+        ExperienceSection GetTopOneExperience();
         bool DeleteExperienceSection(int Id);
     }
     public class ExperienceSectionService : IExperienceSectionService
@@ -49,6 +49,10 @@ namespace AdminCRM.Service.Services.About
         public List<ExperienceSection> GetAllExperience()
         {
             return _experienceSectionRepository.GetAll().ToList();
+        }
+        public ExperienceSection GetTopOneExperience()
+        {
+            return _experienceSectionRepository.GetAll().FirstOrDefault();
         }
 
         public ExperienceSection GetExperienceDetails(int Id)

@@ -8,6 +8,10 @@
     Company company = ViewBag.CompanyBasic as Company;
     List<CompanySocialProfile> companyProfileList = ViewBag.CompanyProfileList as List<CompanySocialProfile>;
     AboutSection about = ViewBag.AboutUsSection as AboutSection;
+    ExperienceSection experience = ViewBag.Experience as ExperienceSection;
+    WorkProcessSection workProcess = ViewBag.WorkProcess as WorkProcessSection;
+    OurServiceMain serviceMain = ViewBag.SingleService as OurServiceMain;
+    List<ServiceSingle> singleServiceList = ViewBag.SingleServiceList as List<ServiceSingle>;
 }
 
 <!-- header top area -->
@@ -392,3 +396,360 @@
     </div>
 </div>
 <!-- END ABOUT_SECTION AREA  -->
+<!-- image_comprace_area -->
+<div class="image_comprace_area">
+    <div class="container-fuled">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="witr-img-pos witr-label-pos-center">
+                    <div id="beer-ready" class="beer-slider" data-beer-label="Before">
+                        <img src="assets/images/after-thumb1.jpg" alt="">
+                        <div class="beer-reveal" data-beer-label="After">
+                            <img src="assets/images/before-thumb.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end image_comprace_area -->
+<!-- EXPLORE THE cleanmaster -->
+
+@if (experience != null)
+{
+    <div class="witr_explore_cleanmaster">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="witr_section_title">
+                        <div class="witr_section_title_inner text-left">
+                            <!-- title top -->
+                            <h2>@experience.TopTitle</h2>
+                            <!-- title middle -->
+                            <h3>@experience.MainTitle</h3>
+                            <p>@experience.Description</p>
+                        </div>
+                    </div>
+                    <div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Experience </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: @experience.ExperiencePercentage%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">@experience.ExperiencePercentage%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Project </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: @experience.ProjectPercentage%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">@experience.ProjectPercentage%</span>
+                            </div>
+                        </div>
+                    </div><div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Support </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: @experience.SupportPercentage%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">@experience.SupportPercentage%</span>
+                            </div>
+                        </div>
+                    </div><div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Clean </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: @experience.CleanPercentage%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">@experience.CleanPercentage%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single_image_area">
+                        <div class="single_image1">
+                            <!-- image -->
+                            <img src="assets/images/exprince.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+else
+{
+    <div class="witr_explore_cleanmaster">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="witr_section_title">
+                        <div class="witr_section_title_inner text-left">
+                            <!-- title top -->
+                            <h2>Our Experience</h2>
+                            <!-- title middle -->
+                            <h3>Effective Work Of Team</h3>
+                            <p>Our sanitizing services go beyond the basic services and ovide you with a comprehensive clean that will reenergize your ome and enhance your life</p>
+                        </div>
+                    </div>
+                    <div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Experience </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Project </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 80%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">80%</span>
+                            </div>
+                        </div>
+                    </div><div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Support </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">90%</span>
+                            </div>
+                        </div>
+                    </div><div class="witr_single_progress all_color_bar">
+                        <div class="witr_title9">
+                            <span class="witr_label">Clean </span>
+                        </div>
+                        <div class="progress witr_progress-style9">
+                            <div class="progress-bar wow fadeInLeft animated animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width: 70%; visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <span class="witr_percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single_image_area">
+                        <div class="single_image1">
+                            <!-- image -->
+                            <img src="assets/images/exprince.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+<!-- END EXPLORE THE cleanmaster -->
+<!-- process_area -->
+@if (workProcess != null)
+{
+    <div class="cleanmaster_process_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="witr_section_title">
+                        <div class="witr_section_title_inner text-center">
+                            <h2>@workProcess.TopTitle</h2>
+                            <h3>@workProcess.MainTitle</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_cleanmaster_process-area">
+                <div class="row cleanmaster_top">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-@workProcess.ProcessOneIcon"></i>
+                                <h3>@workProcess.ProcessOneTitle </h3>
+                                <p>@workProcess.ProcessOneDesc</p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-@workProcess.ProcessTwoIcon"></i>
+                                <h3>@workProcess.ProcessTwoTitle</h3>
+                                <p>@workProcess.ProcessTwoDesc</p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-@workProcess.ProcessThreeIcon"></i>
+                                <h3>@workProcess.ProcessThreeTitle</h3>
+                                <p>@workProcess.ProcessThreeDesc</p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="cleanmaster_process_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="witr_section_title">
+                        <div class="witr_section_title_inner text-center">
+                            <h2>Work Process</h2>
+                            <h3>Our Working Process</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_cleanmaster_process-area">
+                <div class="row cleanmaster_top">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-calendar"></i>
+                                <h3>Book Online Form </h3>
+                                <p>an unknown printer took a galley type and scrambled printer. </p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-envelope"></i>
+                                <h3>Get Confirmation</h3>
+                                <p>an unknown printer took a galley type and scrambled printer. </p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item2 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-slightly-smile"></i>
+                                <h3>Let’s Enjoy</h3>
+                                <p>an unknown printer took a galley type and scrambled printer. </p>
+                                <div class="service-btn1">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!-- end process_area -->
+<!-- service_area	 -->
+<div class="cleanmaster_service_area" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="witr_section_title">
+                    <div class="witr_section_title_inner witr_section_title_inner2 text-center">
+                        @if (serviceMain != null)
+                        {
+                            <h2>@serviceMain.TopTitle</h2>
+                            <h3 style="max-width: 65%; margin: 0 auto">@serviceMain.MainTitle</h3>
+                        }
+                        else
+                        {
+                            <h2>Our Service</h2>
+                            <h3>We Provide Our Best Cleaning <br> Services for You.</h3>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cleanmaster_top">
+            @if (singleServiceList.Count > 0)
+            {
+                foreach (var singleService in singleServiceList)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item service-item3 text-center">
+                            <div class="text_box all_icon_color">
+                                <i class="icofont-@singleService.Icon"></i>
+                                <h3>@singleService.Title  </h3>
+                                <p>@singleService.Description</p>
+                                <div class="service-btn service-btn2">
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item service-item3 text-center">
+                        <div class="text_box all_icon_color">
+                            <i class="icofont-home"></i>
+                            <h3>House Clean  </h3>
+                            <p>We provide janitorial and specialized is ing services for all types and sizes. </p>
+                            <div class="service-btn service-btn2">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item service-item3 text-center">
+                        <div class="text_box all_icon_color">
+                            <i class="icofont-flora"></i>
+                            <h3>Floor Cleaning</h3>
+                            <p>We provide janitorial and specialized is ing services for all types and sizes. </p>
+                            <div class="service-btn service-btn2">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item service-item3 text-center">
+                        <div class="text_box all_icon_color">
+                            <i class="icofont-brand-windows"></i>
+                            <h3>Window Cleaning</h3>
+                            <p>We provide janitorial and specialized is ing services for all types and sizes. </p>
+                            <div class="service-btn service-btn2">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- end service_area	 -->
