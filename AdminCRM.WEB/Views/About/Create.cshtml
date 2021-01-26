@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    
 }
 
 <div class="page-title-box">
@@ -31,7 +32,7 @@
                         </div>
                         <h4 class="header-title">About Section Entry Form</h4>
                         <p class="card-title-desc"></p>
-                        @using (Html.BeginForm("Create", "About", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off" }))
+                        @using (Html.BeginForm("Create", "About", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off", @enctype = "multipart/form-data" }))
                         {
                             @Html.AntiForgeryToken()
                             <div class="row">
@@ -116,6 +117,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Image</label>
+                                    <input type="file" name="file" id="imgInp" value="" class="form-control" />
+                                    <div class="invalid-feedback">
+                                        Please enter a button text!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <img id="blah" src="#" alt="your image" />
+                                </div>
+                            </div>
                             <button class="btn btn-primary" type="submit">Save Data</button>
 
                         }
@@ -127,3 +140,32 @@
 
     </div> <!-- container-fluid -->
 </div>
+
+@section Scripts {
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#imgInp").change(function () {
+                readURL(this);
+            });
+
+
+
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        });
+    </script>
+    
+    
+    
+} 

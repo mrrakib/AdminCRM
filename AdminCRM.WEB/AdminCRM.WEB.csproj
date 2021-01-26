@@ -203,6 +203,7 @@
     <Compile Include="Utility\TrimModelBinder.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Upload\About\about_us.png" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\em-breadcrumb.css" />
     <Content Include="assets\css\plugin_theme_css.css" />
@@ -12672,7 +12673,6 @@
     <Content Include="Views\TeamMember\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\assets\libs\alertifyjs\src\" />
     <Folder Include="Content\assets\libs\bootstrap-daterangepicker\example\" />
     <Folder Include="Content\assets\libs\bootstrap-maxlength\src\" />

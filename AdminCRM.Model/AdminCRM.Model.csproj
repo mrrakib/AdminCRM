@@ -86,6 +86,7 @@
     <Compile Include="Models\CompanyDetails\CompanySocialProfile.cs" />
     <Compile Include="Models\Sections\AboutSection.cs" />
     <Compile Include="Models\Sections\ExperienceSection.cs" />
+    <Compile Include="Models\Sections\Slider.cs" />
     <Compile Include="Models\Sections\TeamMember.cs" />
     <Compile Include="Models\Sections\FeatureSingle.cs" />
     <Compile Include="Models\Sections\FeatureMain.cs" />
