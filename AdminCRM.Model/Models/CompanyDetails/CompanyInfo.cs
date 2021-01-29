@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AdminCRM.Model.Models.CompanyDetails
@@ -20,5 +21,9 @@ namespace AdminCRM.Model.Models.CompanyDetails
         public string CopyrightText { get; set; }
         [StringLength(250, ErrorMessage = "Maximum 250 character allowed.")]
         public string CompanyLogoPath { get; set; }
+        [MaxLength(200, ErrorMessage = "Maximum 200 character allowed.")]
+        [Required(ErrorMessage = "Short description is required.")]
+        [DefaultValue("")]
+        public string CompanyShortDescription { get; set; }
     }
 }

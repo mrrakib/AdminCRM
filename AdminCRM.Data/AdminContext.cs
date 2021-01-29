@@ -34,6 +34,9 @@ namespace AdminCRM.Data
         public virtual DbSet<FeatureSingle> FeatureSingles { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<TeamMember> TeamMembers { get; set; }
+        public virtual DbSet<Slider> Sliders { get; set; }
+        public virtual DbSet<Brands> Brands { get; set; }
+        public virtual DbSet<ContactUs> ContactUs { get; set; }
 
         #endregion
 

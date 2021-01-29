@@ -28,6 +28,7 @@ namespace AdminCRM.Model.Models.Sections
         public int SupportPercentage { get; set; }
         [Required(ErrorMessage = "Clean Percentage is required.")]
         public int CleanPercentage { get; set; }
+        public string ImagePath { get; set; }
 
     }
 }

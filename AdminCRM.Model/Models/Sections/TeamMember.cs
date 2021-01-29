@@ -31,5 +31,7 @@ namespace AdminCRM.Model.Models.Sections
         [MaxLength(150, ErrorMessage = "Maximum 150 character allowed.")]
         public string Vimeo { get; set; }
         public string ImagePath { get; set; }
+        [MaxLength(150, ErrorMessage = "Maximum 150 character allowed.")]
+        public string ImageName { get; set; }
     }
 }

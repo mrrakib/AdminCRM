@@ -23,6 +23,7 @@ namespace AdminCRM.Service.Services.Feature
         bool Update(FeatureMain model);
         bool Save();
         bool Delete(int Id);
+        FeatureMain GetTopOne();
     }
     public class FeatureMainService : IFeatureMainService
     {
@@ -60,6 +61,11 @@ namespace AdminCRM.Service.Services.Feature
         public IPagedList GetPaged(Page page)
         {
             return _featureMainRepository.GetPage(page, x => true, order => order.Id);
+        }
+
+        public FeatureMain GetTopOne()
+        {
+            return _featureMainRepository.GetAll().FirstOrDefault();
         }
 
         public bool Save()

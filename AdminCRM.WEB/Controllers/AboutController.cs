@@ -70,11 +70,6 @@ namespace AdminCRM.Controllers
             {
                 return PartialView("_Error");
             }
-            var filteredByFilename = Directory
-                            .GetFiles(Server.MapPath("~/App_Data/Upload/"))
-                            .Select(f => Path.GetFileName(f))
-                            .Where(f => f.StartsWith(uploadFileName));
-            ViewBag.filename = filteredByFilename;
 
             return View(model);
         }
@@ -88,33 +83,37 @@ namespace AdminCRM.Controllers
             {
                 if (Request.Files.Count > 0)
                 {
-                    string subPath = "~/App_Data/Upload/About";
+                    string subPath = "~/assets/Upload/About";
                     var hasFile = Request.Files[0];
                     if (hasFile != null && hasFile.ContentLength > 0)
                     {
-                        
-                        //delete previous file
-                        var filteredByFilename = Directory
-                                    .EnumerateFiles(Server.MapPath("~/App_Data/Upload/About"))
+                        bool exists = Directory.Exists(Server.MapPath(subPath));
+                        if (exists)
+                        {
+                            var filteredByFilename = Directory
+                                    .GetFiles(Server.MapPath("~/assets/Upload/About"))
                                     .Select(f => Path.GetFileName(f))
                                     .Where(f => f.StartsWith(uploadFileName));
 
-                        if (filteredByFilename != null)
-                        {
-                            foreach (var filname in filteredByFilename)
+                            if (filteredByFilename != null)
                             {
-                                var path = Path.Combine(Server.MapPath("~/App_Data/Upload/About"), filname);
-                                if (System.IO.File.Exists(path))
+                                foreach (var filname in filteredByFilename)
                                 {
-                                    System.IO.File.Delete(path);
+                                    var path = Path.Combine(Server.MapPath("~/assets/Upload/About"), filname);
+                                    if (System.IO.File.Exists(path))
+                                    {
+                                        System.IO.File.Delete(path);
+                                    }
                                 }
+
                             }
-
                         }
+                        //delete previous file
+                        
                     }
-                    model.ImagePath = subPath +"/" + uploadFileName;
+                   // model.ImagePath = subPath +"/" + uploadFileName;
 
-
+                    model.ImagePath = UploadImage(Request);
                 }
                 _aboutSectionService.UpdateAboutSection(model);
                 message.update(this);
@@ -140,6 +139,7 @@ namespace AdminCRM.Controllers
         }
         #endregion
 
+        #region Image Upload
         private string UploadImage(HttpRequestBase httpRequest)
         {
             string filePath = "";
@@ -149,7 +149,7 @@ namespace AdminCRM.Controllers
                 if (file != null && file.ContentLength > 0)
                 {
                     string fileExtension = System.IO.Path.GetExtension(Request.Files["file"].FileName);
-                    if (fileExtension == ".png" || fileExtension == ".jng" || fileExtension == ".jpeg")
+                    if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == ".jpeg")
                     {
                         var fileExt = Path.GetExtension(file.FileName);
                         string fileName = uploadFileName + fileExt;
@@ -159,18 +159,19 @@ namespace AdminCRM.Controllers
                         //    Extension = Path.GetExtension(fileName),
                         //    Id = Guid.NewGuid()
                         //};
-                        string subPath = "~/App_Data/Upload/About";
+                        string subPath = "~/assets/Upload/About";
                         bool exists = Directory.Exists(Server.MapPath(subPath));
                         if (!exists)
                             Directory.CreateDirectory(Server.MapPath(subPath));
 
-                        var path = Path.Combine(Server.MapPath("~/App_Data/Upload/About"), uploadFileName + fileExt);
+                        var path = Path.Combine(Server.MapPath("~/assets/Upload/About"), uploadFileName + fileExt);
                         file.SaveAs(path);
-                        filePath = subPath + "/" + uploadFileName;
+                        filePath = subPath + "/" + uploadFileName + fileExt;
                     }
                 }
             }
             return filePath;
         }
+        #endregion
     }
 }

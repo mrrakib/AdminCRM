@@ -64,6 +64,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="validationCustom03">Short Description</label>
+                                    @Html.TextAreaFor(m => m.CompanyShortDescription, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Short description", @maxLength = "200", @required = "required", @rows = "5" })
+                                    <div class="invalid-feedback">
+                                        Please enter short description!
+                                    </div>
+                                </div>
+                            </div>
                             <button class="btn btn-primary" type="submit">Update Data</button>
 
                         }

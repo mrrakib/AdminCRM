@@ -1,0 +1,143 @@
+﻿@model AdminCRM.Model.Models.Sections.ContactUs
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="page-title-box">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="page-title mb-1">About Section</h4>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index")">About Section</a></li>
+                    <li class="breadcrumb-item active">Add About Section</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="float-right ml-2">
+                            <a class="btn btn-sm btn-warning btn-flat margin" href="@Url.Action("Index")">Back to List</a>
+                        </div>
+                        <h4 class="header-title">About Section Entry Form</h4>
+                        <p class="card-title-desc"></p>
+                        @using (Html.BeginForm("Create", "ContactUs", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off", @enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Location title</label>
+                                    @Html.TextBoxFor(m => m.LocationTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter location title", @maxLength = "50", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-3">
+                                    <label for="validationCustom03">Location Address</label>
+                                    @Html.TextBoxFor(m => m.LocationAddress, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter location address", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a address!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom03">Location Icon</label>
+                                    @Html.TextBoxFor(m => m.LocationIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: home", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Phone title</label>
+                                    @Html.TextBoxFor(m => m.PhoneTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter phone title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-3">
+                                    <label for="validationCustom03">Phone Number</label>
+                                    @Html.TextBoxFor(m => m.PhoneNumber, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter phone number", @maxLength = "20", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a phone number!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom03">Phone Icon</label>
+                                    @Html.TextBoxFor(m => m.PhoneIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: phone", @maxLength = "50", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03">Mail title</label>
+                                    @Html.TextBoxFor(m => m.MailTitle, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter mail title", @maxLength = "80", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a title!
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-3">
+                                    <label for="validationCustom03">Email</label>
+                                    @Html.TextBoxFor(m => m.Email, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Enter email address", @maxLength = "100", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a email!
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom03">Mail Icon</label>
+                                    @Html.TextBoxFor(m => m.MailIcon, new { @id = "validationCustom03", @class = "form-control", @placeholder = "Ex: email", @maxLength = "50", @required = "required" })
+                                    <div class="invalid-feedback">
+                                        Please enter a icon!
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Save Data</button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div> <!-- container-fluid -->
+</div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#imgInp").change(function () {
+                readURL(this);
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        });
+    </script>
+
+
+
+} 

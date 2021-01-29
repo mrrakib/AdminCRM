@@ -18,6 +18,7 @@ namespace AdminCRM.Service.Services.Feature
         IPagedList GetPaged(Page page);
 
         List<Team> GetAll();
+        Team GetTopOne();
         Team GetDetails(int Id);
         bool Add(Team model);
         bool Update(Team model);
@@ -60,6 +61,11 @@ namespace AdminCRM.Service.Services.Feature
         public IPagedList GetPaged(Page page)
         {
             return _teamRepository.GetPage(page, x => true, order => order.Id);
+        }
+
+        public Team GetTopOne()
+        {
+            return _teamRepository.GetAll().ToList().FirstOrDefault();
         }
 
         public bool Save()

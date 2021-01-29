@@ -4,20 +4,20 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-    <div class="page-title-box">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h4 class="page-title mb-1">About Section</h4>
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="@Url.Action("Index")">Experience Section</a></li>
-                        <li class="breadcrumb-item active">Update Experience Section</li>
-                    </ol>
-                </div>
+<div class="page-title-box">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4 class="page-title mb-1">About Section</h4>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index")">Experience Section</a></li>
+                    <li class="breadcrumb-item active">Update Experience Section</li>
+                </ol>
             </div>
-
         </div>
+
     </div>
+</div>
 
 <div class="page-content-wrapper">
     <div class="container-fluid">
@@ -30,7 +30,7 @@
                         </div>
                         <h4 class="header-title">about section update Form</h4>
                         <p class="card-title-desc"></p>
-                        @using (Html.BeginForm("Edit", "Experience", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off" }))
+                        @using (Html.BeginForm("Edit", "Experience", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate", @autocomplete = "off", @enctype = "multipart/form-data" }))
                         {
                             @Html.AntiForgeryToken()
                             @Html.HiddenFor(model => model.Id)
@@ -91,6 +91,26 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Image</label>
+                                    <input type="file" id="imgInp" name="file" value="" class="form-control" />
+                                    <div class="invalid-feedback">
+                                        Please enter a button text!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    @if (!String.IsNullOrEmpty(Model.ImagePath))
+                                    {
+                                        <img style="max-width:100%; max-height: 250px" id="blah" src="@Url.Content(Model.ImagePath)" alt="your image" />
+                                    }
+                                    else
+                                    {
+                                        <img style="max-width:100%" id="blah" src="#" alt="your image" />
+                                    }
+
+                                </div>
+                            </div>
                             <button class="btn btn-primary" type="submit">Update Data</button>
 
                         }
@@ -102,3 +122,30 @@
 
     </div> <!-- container-fluid -->
 </div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#imgInp").change(function () {
+                readURL(this);
+            });
+
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        });
+    </script>
+
+
+
+} 

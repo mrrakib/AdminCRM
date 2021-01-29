@@ -88,8 +88,10 @@
     <Compile Include="Services\About\ExperienceSectionService.cs" />
     <Compile Include="Services\About\AboutSectionService.cs" />
     <Compile Include="Services\Autofac\UserService.cs" />
+    <Compile Include="Services\BrandLogo\BrandService.cs" />
     <Compile Include="Services\CompanyServices\CompanySocialProfileService.cs" />
     <Compile Include="Services\CompanyServices\CompanyService.cs" />
+    <Compile Include="Services\Contact\ContactUsService.cs" />
     <Compile Include="Services\Feature\FeatureSingleService.cs" />
     <Compile Include="Services\Feature\FeatureMainService.cs" />
     <Compile Include="Services\Team\TeamMemberService.cs" />

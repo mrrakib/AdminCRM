@@ -175,6 +175,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\TeamMemberController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\SingleFeatureController.cs" />
@@ -203,7 +205,6 @@
     <Compile Include="Utility\TrimModelBinder.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Upload\About\about_us.png" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\em-breadcrumb.css" />
     <Content Include="assets\css\plugin_theme_css.css" />
@@ -12671,8 +12672,16 @@
     <Content Include="Views\TeamMember\Create.cshtml" />
     <Content Include="Views\TeamMember\Edit.cshtml" />
     <Content Include="Views\TeamMember\Index.cshtml" />
+    <Content Include="Views\Brands\Create.cshtml" />
+    <Content Include="Views\Brands\Edit.cshtml" />
+    <Content Include="Views\Brands\Index.cshtml" />
+    <Content Include="Views\ContactUs\Create.cshtml" />
+    <Content Include="Views\ContactUs\Edit.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\Upload\About\" />
+    <Folder Include="assets\Upload\About\" />
     <Folder Include="Content\assets\libs\alertifyjs\src\" />
     <Folder Include="Content\assets\libs\bootstrap-daterangepicker\example\" />
     <Folder Include="Content\assets\libs\bootstrap-maxlength\src\" />

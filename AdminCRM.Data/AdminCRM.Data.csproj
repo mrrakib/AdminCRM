@@ -135,6 +135,26 @@
     <Compile Include="Migrations\202101241458189_Alter_CompanyInfo.Designer.cs">
       <DependentUpon>202101241458189_Alter_CompanyInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101290530363_Add_slider_Alter_Experience_add_img.cs" />
+    <Compile Include="Migrations\202101290530363_Add_slider_Alter_Experience_add_img.Designer.cs">
+      <DependentUpon>202101290530363_Add_slider_Alter_Experience_add_img.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101290916048_Add_Brand_Logos.cs" />
+    <Compile Include="Migrations\202101290916048_Add_Brand_Logos.Designer.cs">
+      <DependentUpon>202101290916048_Add_Brand_Logos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101291023262_Alter_Single_Feature_add_imagename_and_path.cs" />
+    <Compile Include="Migrations\202101291023262_Alter_Single_Feature_add_imagename_and_path.Designer.cs">
+      <DependentUpon>202101291023262_Alter_Single_Feature_add_imagename_and_path.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101291132469_Alter_Teammember_add_imagename.cs" />
+    <Compile Include="Migrations\202101291132469_Alter_Teammember_add_imagename.Designer.cs">
+      <DependentUpon>202101291132469_Alter_Teammember_add_imagename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101291246305_Add_ContactUs.cs" />
+    <Compile Include="Migrations\202101291246305_Add_ContactUs.Designer.cs">
+      <DependentUpon>202101291246305_Add_ContactUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\About\WorkProcessSectionRepository.cs" />
@@ -143,8 +163,10 @@
     <Compile Include="Repository\Autofac\UserRepository.cs" />
     <Compile Include="Repository\CompanyRepo\CompanySocialProfileRepository.cs" />
     <Compile Include="Repository\CompanyRepo\CompanyRepository.cs" />
+    <Compile Include="Repository\Contact\ContactUsRepository.cs" />
     <Compile Include="Repository\Feature\FeatureSingleRepository.cs" />
     <Compile Include="Repository\Feature\FeatureMainRepository.cs" />
+    <Compile Include="Repository\Service\BrandRepository.cs" />
     <Compile Include="Repository\Service\ServiceSingleRepository.cs" />
     <Compile Include="Repository\Service\OurServiceMainRepository.cs" />
     <Compile Include="Repository\Team\TeamMemberRepository.cs" />
@@ -194,6 +216,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101241458189_Alter_CompanyInfo.resx">
       <DependentUpon>202101241458189_Alter_CompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101290530363_Add_slider_Alter_Experience_add_img.resx">
+      <DependentUpon>202101290530363_Add_slider_Alter_Experience_add_img.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101290916048_Add_Brand_Logos.resx">
+      <DependentUpon>202101290916048_Add_Brand_Logos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101291023262_Alter_Single_Feature_add_imagename_and_path.resx">
+      <DependentUpon>202101291023262_Alter_Single_Feature_add_imagename_and_path.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101291132469_Alter_Teammember_add_imagename.resx">
+      <DependentUpon>202101291132469_Alter_Teammember_add_imagename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101291246305_Add_ContactUs.resx">
+      <DependentUpon>202101291246305_Add_ContactUs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

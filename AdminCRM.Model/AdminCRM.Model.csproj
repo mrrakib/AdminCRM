@@ -85,6 +85,8 @@
     <Compile Include="Models\CompanyDetails\CompanyInfo.cs" />
     <Compile Include="Models\CompanyDetails\CompanySocialProfile.cs" />
     <Compile Include="Models\Sections\AboutSection.cs" />
+    <Compile Include="Models\Sections\ContactUs.cs" />
+    <Compile Include="Models\Sections\Brands.cs" />
     <Compile Include="Models\Sections\ExperienceSection.cs" />
     <Compile Include="Models\Sections\Slider.cs" />
     <Compile Include="Models\Sections\TeamMember.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Models\Sections\WorkProcessSection.cs" />
     <Compile Include="Models\Sections\OurServiceMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\VMImage.cs" />
     <Compile Include="ViewModels\VMLogin.cs" />
     <Compile Include="ViewModels\VMRegister.cs" />
     <Compile Include="ViewModels\VMUserInfo.cs" />

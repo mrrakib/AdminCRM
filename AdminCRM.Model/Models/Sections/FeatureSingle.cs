@@ -17,5 +17,7 @@ namespace AdminCRM.Model.Models.Sections
         [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; }
         public string ImagePath { get; set; }
+        [MaxLength(150, ErrorMessage = "Maximum 150 character allowed.")]
+        public string ImageName { get; set; }
     }
 }
