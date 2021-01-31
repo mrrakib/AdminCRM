@@ -51,5 +51,89 @@
     @Scripts.Render("~/bundles/adminjs2")
     @Scripts.Render("~/bundles/dataTablejs")
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".deleteItem").click(function (e) {
+            var url = $(this).attr('deleteTag');
+
+            var appUrl = '@System.Configuration.ConfigurationManager.AppSettings["baseurl"]';
+
+            alertify.confirm("Delete Warning!", "Are you sure you wish to delete this item?",
+                function () {
+                    window.location.href = appUrl + url;
+                },
+                function () {
+                    alertify.error('Canceled!');
+                });
+            });
+        });
+
+
+
+        $(function () {
+
+            // Selection
+
+            var urlString = window.location.toString();
+            var hasValue = urlString.substr(0, urlString.indexOf("/Create"));
+            if (hasValue.length < 1) {
+                hasValue = urlString.substr(0, urlString.indexOf("/Edit"));
+            }
+            if (hasValue.length < 1) {
+                hasValue = urlString.substr(0, urlString.indexOf("/View"));
+            }
+            if (hasValue.length < 1) {
+                hasValue = urlString.substr(0, urlString.indexOf("/ProfileView"));
+            }
+            if (hasValue.length < 1) {
+                hasValue = urlString.substr(0, urlString.indexOf("?"));
+            }
+            if (hasValue.length > 0) {
+                urlString = hasValue;
+            }
+            var menuItem = $('#sidebar-menu ul li a').filter(function () {
+                return this.href == urlString;
+            })
+
+            menuItem.parent('li').addClass('mm-active').parent('ul').addClass('mm-show');
+            menuItem.parent('li').parent('ul').prev().addClass('mm-active');
+            menuItem.addClass('active');
+
+
+            //alertify active
+            var saveMsg = '@TempData["save"]';
+            var updateMsg = '@TempData["update"]';
+            var deleteMsg = '@TempData["delete"]';
+            var customMsg = '@TempData["custom"]';
+            var warningMsg = '@TempData["warning"]';
+            var successMsg = '@TempData["success"]';
+
+            if (saveMsg != '') {
+                alertify.success('Data saved successfully!');
+            }
+
+            if (updateMsg != '') {
+                alertify.success('Data updated successfully!');
+            }
+
+            if (deleteMsg != '') {
+                alertify.success('Data deleted successfully!');
+            }
+
+            if (customMsg != '') {
+                alertify.error(customMsg);
+            }
+
+            if (warningMsg != '') {
+                alertify.message(warningMsg);
+            }
+            if (successMsg != '') {
+                alertify.success(successMsg);
+            }
+
+        });
+    </script>
 </body>
 </html>

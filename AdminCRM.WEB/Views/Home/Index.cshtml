@@ -870,10 +870,11 @@ else
             <div class="row cleanmaster_top">
                 @foreach (var singleFeature in singleFeatureList)
                 {
+                    var imgPath = String.IsNullOrEmpty(singleFeature.ImagePath) ? "~/assets/images/fe-1.jpg" : singleFeature.ImagePath;
                     <div class=" col-lg-4 col-md-6 col-sm-12">
                         <div class="witr_case all_case_color ">
                             <div class="witr_case_image">
-                                <img src="@Url.Content(singleFeature.ImagePath)" alt="Featured Image" />
+                                <img src="@Url.Content(imgPath)" alt="Featured Image" />
                             </div>
                             <div class="witr_content_casem">
                                 <div class="witr_content_casei">
@@ -999,11 +1000,11 @@ else
             <div class="row cleanmaster_top">
                 @foreach (var member in teamMembers)
                 {
-
+                    var imgPath = String.IsNullOrEmpty(member.ImagePath) ? "~/assets/images/team-1.jpg" : member.ImagePath;
                     <div class=" col-lg-4 col-md-6 col-sm-12">
                         <div class="team-part all_color_team">
                             <div class="witr_team_sec_3">
-                                <img src="@Url.Content(member.ImagePath)" alt="Team member" />
+                                <img src="@Url.Content(imgPath)" alt="Team member" />
                                 <div class="witr_team_content3 text-center all_team_icon_o_color">
                                     <h5>@member.Name </h5>
                                     <span>@member.Designation </span>

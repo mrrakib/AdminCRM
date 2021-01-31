@@ -47,8 +47,8 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="float-right ml-2">
-                                <a class="btn btn-sm btn-info btn-flat margin" href="@Url.Action("Create")">Add Profile</a>
-                            </div>
+                            <a class="btn btn-sm btn-info btn-flat margin" href="@Url.Action("Create")">Add Profile</a>
+                        </div>
                         <h5 class="header-title mb-4">All Social Profiles</h5>
 
                         <div class="table-responsive">
@@ -81,7 +81,7 @@
                                                             @*<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="Edit">*@
                                                             <i class="mdi mdi-pencil"></i>
                                                         </a>
-                                                        <a class="btn btn-outline-secondary btn-sm" href="@Url.Action("Delete", new { id = item.Data.Id })" toggle="tooltip" data-placement="top" title="Delete" onclick = "return confirm('Are you sure you wish to delete this item?');">
+                                                        <a class="btn btn-outline-secondary btn-sm deleteItem" toggle="tooltip" data-placement="top" title="Delete" onclick="" deleteTag="@Url.Action("Delete", "CompanySocialProfile")/@item.Data.Id">
                                                             <i class="mdi mdi-trash-can"></i>
                                                         </a>
                                                     </div>

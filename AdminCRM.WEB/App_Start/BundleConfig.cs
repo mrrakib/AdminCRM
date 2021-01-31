@@ -112,6 +112,8 @@ namespace AdminCRM
             bundles.Add(new StyleBundle("~/Content/adminCss").Include(
                     "~/Content/assets/libs/air-datepicker/css/datepicker.min.css",
                     "~/Content/assets/libs/jqvmap/jqvmap.min.css",
+                    "~/Content/assets/libs/alertifyjs/build/css/alertify.min.css",
+                    "~/Content/assets/libs/alertifyjs/build/css/themes/default.min.css",
                     "~/Content/assets/css/bootstrap.min.css",
                     "~/Content/assets/css/icons.min.css",
                     "~/Content/assets/css/app.min.css"
@@ -133,6 +135,8 @@ namespace AdminCRM
                      "~/Content/assets/libs/jqvmap/jquery.vmap.min.js",
                      "~/Content/assets/libs/jqvmap/maps/jquery.vmap.usa.js",
                      "~/Content/assets/libs/node-waves/waves.min.js",
+                     "~/Content/assets/libs/alertifyjs/build/alertify.min.js",
+                     "~/Content/assets/js/pages/alertifyjs.init.js",
                      "~/Content/assets/js/pages/dashboard.init.js",
                      "~/Content/assets/libs/parsleyjs/parsley.min.js",
                      "~/Content/assets/js/pages/form-validation.init.js",
